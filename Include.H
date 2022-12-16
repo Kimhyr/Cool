@@ -4,6 +4,8 @@
 
 #define NIL nullptr
 
+using Void = void;
 using Bool = bool;
+using Size = unsigned long long int;
 
 #endif // INCLUDE_H

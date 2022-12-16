@@ -7,7 +7,7 @@
 template<typename Type_T>
 struct Singly {
     Type_T Value;
-    SIngly *Next;
+    Singly *Next;
 
 public:
     Singly(Type_T value);

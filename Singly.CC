@@ -15,7 +15,7 @@ Void Singly<Type_T>::Destroy() {
 
 template<typename Type_T>
 Void Singly<Type_T>::Insert(Singly<Type_T> *node) {
-    singly<Type_T> **curr = &this->Next;
+    Singly<Type_T> **curr = &this->Next;
     while (*curr)
         curr = &(*curr)->Next;
     *curr = node;
@@ -33,7 +33,7 @@ Bool Singly<Type_T>::Delete(Singly<Type_T> *target) {
 }
 
 template<typename Type_T>
-size Singly<Type_T>::GetLength() {
+Size Singly<Type_T>::GetLength() {
     Size size = 0;
     for (Singly<Type_T> *node = this->Next; node; ++size)
         node = node->Next;
